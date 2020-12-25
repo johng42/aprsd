@@ -118,7 +118,7 @@ def get_config(config_file):
             msg = "Custom config file '{}' is missing.".format(config_file)
             click.echo(msg)
 
-        sys.exit(-1)
+        return msg
 
 
 # This method tries to parse the config yaml file
